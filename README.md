@@ -3,8 +3,7 @@ Not mine, play
 [here](https://ma-hk.github.io/towerdef/).
 
 You can also make and edit custom maps using this
-[map editor](https://rsaihe.github.io/td-editor/). Instructions are located on
-the Github [repo](https://github.com/rsaihe/td-editor/).
+[map editor](https://ma-hk.github.io/td-edit/).
 
 ### Controls:
 * Esc to deselect tower
