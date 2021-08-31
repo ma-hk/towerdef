@@ -2,9 +2,6 @@
 Not mine, play 
 [here](https://ma-hk.github.io/towerdef/).
 
-You can also make and edit custom maps using this
-[map editor](https://ma-hk.github.io/td-edit/).
-
 ### Controls:
 * Esc to deselect tower
 * Left and right brackets to change map size (will reset game!)
