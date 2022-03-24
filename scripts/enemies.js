@@ -218,8 +218,11 @@ enemy.spawner = {
     // Misc
     name: 'spawner',
     // Stats
-    cash: 10,
-    health: 1150,
+    cash: 45,
+    health: 5150,
+    immune: ['explosion', 'poison'],
+    resistant: ['energy', 'physical'],
+    weak: ['slow', 'piercing'],
     // Methods
     onKilled: function() {
         if (this.alive) {
@@ -248,7 +251,7 @@ enemy.spawnertank = {
     name: 'spawnertank',
     // Stats
     cash: 100,
-    health: 11500,
+    health: 15500,
     immune: ['explosion', 'poison'],
     resistant: ['energy', 'physical'],
     weak: ['slow', 'piercing'],
