@@ -239,3 +239,35 @@ enemy.spawner = {
         }
     }
 };
+
+enemy.spawnertank = {
+    // Display
+    color: [255, 178, 66],
+    radius: 1.0,
+    // Misc
+    name: 'spawnertank',
+    // Stats
+    cash: 100,
+    health: 11500,
+    immune: ['explosion', 'poison'],
+    resistant: ['energy', 'physical'],
+    weak: ['slow', 'piercing'],
+    // Methods
+    onKilled: function() {
+        if (this.alive) {
+            cash += this.cash;
+            this.kill();
+            if (!muteSounds && sounds.hasOwnProperty(this.sound)) {
+                sounds[this.sound].play();
+            }
+            
+            // Add new temporary spawnpoint
+            var c = gridPos(this.pos.x, this.pos.y);
+            if (c.equals(exit)) return;
+            for (var i = 0; i < tempSpawns.length; i++) {
+                if (c.equals(tempSpawns[i][0])) return;
+            }
+            tempSpawns.push([createVector(c.x, c.y), tempSpawnCount]);
+        }
+    }
+};
