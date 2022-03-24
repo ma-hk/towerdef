@@ -1087,8 +1087,8 @@ function keyPressed() {
             // Q
             stopFiring = !stopFiring;
             break;
-        case 82:
-            // L
+        case 192:
+            // `
             resetGame();
             break;
         case 83:
